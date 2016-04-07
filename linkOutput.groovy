@@ -1,4 +1,4 @@
-Closure out =  { inputLength ->
+return { inputLength ->
 //Bar dimensions
 //y normally 62
 [barX = 10, barY = inputLength, barZ = 10]
@@ -55,5 +55,3 @@ bar = bar.union(line.roty(180));
 
 return bar;
 }
-
-return out;
