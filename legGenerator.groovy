@@ -8,6 +8,15 @@ println "Loading STL file"
 File servoFile = ScriptingEngine.fileFromGit(
 	"https://github.com/NeuronRobotics/BowlerStudioVitamins.git",
 	"BowlerStudioVitamins/stl/servo/smallservo.stl");
+
+ScriptingEngine.setAutoupdate(true)
+Closure generateLink = (Closure)ScriptingEngine
+					 .gitScriptRun(
+            "https://github.com/madhephaestus/BancroftMakerspaceProject2016.git", // git location of the library
+            "linkOutput.groovy" , // file to load
+            null// no parameters (see next tutorial)
+            );
+            
 // Load the .CSG from the disk and cache it in memory
 CSG servo  = Vitamins.get(servoFile);
 return new ICadGenerator(){
