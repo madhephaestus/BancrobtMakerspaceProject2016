@@ -1,5 +1,8 @@
+return
+{ inputLength ->
 //Bar dimensions
-[barX = 10, barY = 62, barZ = 10]
+//y normally 62
+[barX = 10, barY = inputLength, barZ = 10]
 
 //Screw dimensions
 screwDiameter = 4.5;
@@ -52,3 +55,4 @@ bar = bar.union(line.roty(90));
 bar = bar.union(line.roty(180));
 
 return bar;
+}
