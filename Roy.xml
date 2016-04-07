@@ -1,10 +1,8 @@
 <root>
 <mobilebase>
-
-<driveType>walking</driveType>
 	<cadEngine>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>ThreeDPrintCad.groovy</file>
+		<git>https://github.com/madhephaestus/BancroftMakerspaceProject2016.git</git>
+		<file>bodyGenerator.groovy</file>
 	</cadEngine>
 	<driveEngine>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -38,6 +36,8 @@
 	<indexLatch>105</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -70,6 +70,8 @@
 	<indexLatch>97</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -102,6 +104,8 @@
 	<indexLatch>145</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -134,10 +138,10 @@
 	<x>-55.0</x>
 	<y>-50.0</y>
 	<z>1.9984014443252818E-15</z>
-	<rotw>0.3826834323650933</rotw>
-	<rotx>2.3820429953758186E-17</rotx>
-	<roty>1.813220358410302E-16</roty>
-	<rotz>-0.9238795325112843</rotz>
+	<rotw>0.38268343236509444</rotw>
+	<rotx>2.3820429953758112E-17</rotx>
+	<roty>1.8132203584102984E-16</roty>
+	<rotz>-0.9238795325112825</rotz>
 </baseToZframe>
 
 </leg>
@@ -167,6 +171,8 @@
 	<indexLatch>171</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -199,6 +205,8 @@
 	<indexLatch>148</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -231,6 +239,8 @@
 	<indexLatch>120</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -263,10 +273,10 @@
 	<x>0.0</x>
 	<y>-60.0</y>
 	<z>4.440892098500626E-15</z>
-	<rotw>0.7072238818849061</rotw>
-	<rotx>8.997248564922612E-6</rotx>
-	<roty>-2.3805711206739314E-4</roty>
-	<rotz>-0.7069896209559978</rotz>
+	<rotw>0.7072238818849059</rotw>
+	<rotx>8.997248564922616E-6</rotx>
+	<roty>-2.3805711206739322E-4</roty>
+	<rotz>-0.706989620955998</rotz>
 </baseToZframe>
 
 </leg>
@@ -296,6 +306,8 @@
 	<indexLatch>124</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -328,6 +340,8 @@
 	<indexLatch>91</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -360,6 +374,8 @@
 	<indexLatch>139</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -425,6 +441,8 @@
 	<indexLatch>133</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -457,6 +475,8 @@
 	<indexLatch>137</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -489,6 +509,8 @@
 	<indexLatch>131</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
 	<homingTPS>10000000</homingTPS>
+	<electroMechanicalSize>standardMicro</electroMechanicalSize>
+	<electroMechanicalType>hobbyServo</electroMechanicalType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -528,264 +550,6 @@
 </baseToZframe>
 
 </leg>
-<leg>
-
-<name>Carl_Five</name>
-	<cadEngine>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>ThreeDPrintCad.groovy</file>
-	</cadEngine>
-	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>DefaultDhSolver.groovy</file>
-	</kinematics>
-<link>
-	<name>basePan</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>12</index>
-	<scale>0.33</scale>
-	<upperLimit>157.94776119402985</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>122.2910447761194</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>128</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>0.0</Theta>
-		<Radius>50.0</Radius>
-		<Alpha>-90.0</Alpha>
-	</DHParameters>
-
-</link>
-<link>
-	<name>baseTilt</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>13</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>126.09701492537313</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>128</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>0.0</Theta>
-		<Radius>50.0</Radius>
-		<Alpha>180.0</Alpha>
-	</DHParameters>
-
-</link>
-<link>
-	<name>elbow</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>14</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>81.82835820895522</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>148.3079750501225</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>128</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>-90.0</Theta>
-		<Radius>70.0</Radius>
-		<Alpha>0.0</Alpha>
-	</DHParameters>
-
-</link>
-
-<ZframeToRAS
->	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
-</ZframeToRAS>
-
-<baseToZframe>
-	<x>0.0</x>
-	<y>60.0</y>
-	<z>-4.440892098500626E-15</z>
-	<rotw>0.7071067811865476</rotw>
-	<rotx>7.85046229341887E-17</rotx>
-	<roty>7.85046229341888E-17</roty>
-	<rotz>0.7071067811865475</rotz>
-</baseToZframe>
-
-</leg>
-<leg>
-
-<name>Carl_Six</name>
-	<cadEngine>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>ThreeDPrintCad.groovy</file>
-	</cadEngine>
-	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>DefaultDhSolver.groovy</file>
-	</kinematics>
-<link>
-	<name>basePan</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>15</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>120.38805970149252</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>135</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>0.0</Theta>
-		<Radius>50.0</Radius>
-		<Alpha>-90.0</Alpha>
-	</DHParameters>
-
-</link>
-<link>
-	<name>baseTilt</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>16</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>108.97014925373135</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>120</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>0.0</Theta>
-		<Radius>50.0</Radius>
-		<Alpha>180.0</Alpha>
-	</DHParameters>
-
-</link>
-<link>
-	<name>elbow</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>17</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>58.992537313432834</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>124.79048785921142</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>141</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>-90.0</Theta>
-		<Radius>70.0</Radius>
-		<Alpha>0.0</Alpha>
-	</DHParameters>
-
-</link>
-
-<ZframeToRAS
->	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
-</ZframeToRAS>
-
-<baseToZframe>
-	<x>-55.0</x>
-	<y>50.0</y>
-	<z>-7.771561172376096E-15</z>
-	<rotw>0.38268343236507907</rotw>
-	<rotx>-1.813220358410335E-16</rotx>
-	<roty>-2.3003042022369397E-16</roty>
-	<rotz>0.9238795325112925</rotz>
-</baseToZframe>
-
-</leg>
 
 <ZframeToRAS>
 	<x>0.0</x>
@@ -806,6 +570,14 @@
 	<roty>0.0</roty>
 	<rotz>0.0</rotz>
 </baseToZframe>
+	<mass>0.01</mass>
+	<centerOfMassFromCentroid>	<x>0.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+	<rotw>1.0</rotw>
+	<rotx>0.0</rotx>
+	<roty>0.0</roty>
+	<rotz>0.0</rotz></centerOfMassFromCentroid>
 
 </mobilebase>
 
