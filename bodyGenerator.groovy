@@ -58,7 +58,7 @@ return new ICadGenerator(){
 		return allCad;
 	}
 	
-	private CSG getAppendageMount(){
+	private CSG getAttachment(){
 
 		
 		return new Cube(10).toCSG();
