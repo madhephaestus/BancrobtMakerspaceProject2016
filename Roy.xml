@@ -149,8 +149,8 @@
 
 <name>Carl_Two</name>
 	<cadEngine>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>ThreeDPrintCad.groovy</file>
+		<git>https://github.com/madhephaestus/BancroftMakerspaceProject2016.git</git>
+		<file>legGenerator.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -284,8 +284,8 @@
 
 <name>Carl_Three</name>
 	<cadEngine>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>ThreeDPrintCad.groovy</file>
+		<git>https://github.com/madhephaestus/BancroftMakerspaceProject2016.git</git>
+		<file>legGenerator.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -419,8 +419,8 @@
 
 <name>Carl_Four</name>
 	<cadEngine>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>ThreeDPrintCad.groovy</file>
+		<git>https://github.com/madhephaestus/BancroftMakerspaceProject2016.git</git>
+		<file>legGenerator.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
