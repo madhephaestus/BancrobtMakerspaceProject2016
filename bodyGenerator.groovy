@@ -57,7 +57,11 @@ return new ICadGenerator(){
 
 		return allCad;
 	}
-	
+	private CSG getAppendageMount(){
+
+		
+		return new Cube(20).toCSG();
+	}
 	private CSG getAttachment(){
 
 		
@@ -111,8 +115,8 @@ return new ICadGenerator(){
 		
 	
 					
-		upperBody.setColor(Color.CYAN);
-		upperBody.setManipulator(base.getRootListener());
+		
+		upperBody.setManipulator(b.getRootListener());
 		upperBody.setManufactuing(new PrepForManufacturing() {
 					public CSG prep(CSG arg0) {
 						return arg0.toZMin();
