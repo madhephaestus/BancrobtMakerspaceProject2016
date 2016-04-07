@@ -1,4 +1,4 @@
-return { inputLength ->
+return { double inputLength ->
 //Bar dimensions
 //y normally 62
 [barX = 10, barY = inputLength, barZ = 10]
