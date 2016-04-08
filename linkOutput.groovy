@@ -53,5 +53,5 @@ bar = bar.union(line);
 bar = bar.union(line.roty(90));
 bar = bar.union(line.roty(180));
 
-return bar.movex(-10);
+return bar.movex(inputLength / 2);
 }
