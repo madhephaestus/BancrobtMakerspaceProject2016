@@ -1,4 +1,4 @@
-return {
+return { double screwLength ->
 import java.nio.file.Paths;
 import eu.mihosoft.vrl.v3d.FileUtil;
 import com.neuronrobotics.bowlerstudio.vitamins.*;
@@ -25,7 +25,7 @@ servo = servo.union(post)
 servo = servo.union(post.movey(postDiameter + postTaper + postSpaceBetween))
 
 //Screws
-CSG screw = new Cylinder(screwDiameter / 2, screwDiameter / 2, 1000, 30).toCSG()
+CSG screw = new Cylinder(screwDiameter / 2, screwDiameter / 2, screwLength, 30).toCSG()
 			.movey(-servoBodyY / 2 + postDiameter / 2 + postTaper)
 			.movez(servoBodyZ / 2);
 
