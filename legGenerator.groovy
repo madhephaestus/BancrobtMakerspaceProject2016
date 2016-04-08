@@ -10,12 +10,20 @@ File servoFile = ScriptingEngine.fileFromGit(
 	"BowlerStudioVitamins/stl/servo/smallservo.stl");
 
 ScriptingEngine.setAutoupdate(true)
+
 Closure generateLink = (Closure)ScriptingEngine
 					 .gitScriptRun(
             "https://github.com/madhephaestus/BancroftMakerspaceProject2016.git", // git location of the library
             "linkOutput.groovy" , // file to load
             null// no parameters (see next tutorial)
             );
+
+//Closure generateServo = (Closure)ScriptingEngine
+//					 .gitScriptRun(
+//            "https://github.com/madhephaestus/BancroftMakerspaceProject2016.git", // git location of the library
+//            "vexServo.groovy" , // file to load
+//            null// no parameters (see next tutorial)
+//            );
             
 // Load the .CSG from the disk and cache it in memory
 CSG servo  = Vitamins.get(servoFile);
@@ -33,12 +41,22 @@ return new ICadGenerator(){
 		// Transform used by the UI to render the location of the object
 		Affine manipulator = dh.getListener();
 		CSG tmpSrv = servo.clone()
+//		CSG tmpSrv = generateServo()
 					.rotx(-Math.toDegrees(dh.getAlpha()))
 					.rotz(-Math.toDegrees(dh.getTheta()))
 					.movex(-dh.getR())
 					.movez(-dh.getD())
 		tmpSrv.setManipulator(manipulator)
 		allCad.add(tmpSrv)
+
+		CSG tmpLink = generateLink(62)
+					.rotx(-Math.toDegrees(dh.getAlpha()))
+					.rotz(-Math.toDegrees(dh.getTheta()))
+					.movex(-dh.getR())
+					.movez(-dh.getD())
+		tmpLink.setManipulator(manipulator)
+		allCad.add(tmpLink)
+		
 		println "Generating link: "+linkIndex
 
 		if(i==0){
