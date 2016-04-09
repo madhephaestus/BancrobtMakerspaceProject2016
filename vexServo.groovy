@@ -2,7 +2,7 @@ import java.nio.file.Paths;
 import eu.mihosoft.vrl.v3d.FileUtil;
 import com.neuronrobotics.bowlerstudio.vitamins.*;
 
-return { double screwLength ->
+return { double keepawayLength ->
 [servoBodyX = 19.7, servoBodyY = 39.7, servoBodyZ = 38.3]
 [postDiameter = 8, postTaper = 0.6, postSpaceBetween = 4.2, postHeight = 14.3]
 screwDiameter = 4.5;
@@ -25,7 +25,7 @@ servo = servo.union(post)
 servo = servo.union(post.movey(postDiameter + postTaper + postSpaceBetween))
 
 //Screws
-CSG screw = new Cylinder(screwDiameter / 2, screwDiameter / 2, screwLength, 30).toCSG()
+CSG screw = new Cylinder(screwDiameter / 2, screwDiameter / 2, keepawayLength, 30).toCSG()
 			.movey(-servoBodyY / 2 + postDiameter / 2 + postTaper)
 			.movez(servoBodyZ / 2);
 
@@ -55,7 +55,7 @@ CSG clutch = new Cylinder(clutchDiameter / 2, clutchDiameter / 2, clutchHeight, 
 servo = servo.union(clutch);
 
 //Axle
-CSG axle = new Cylinder((axleSlotX * 1.414) / 2, (axleSlotX * 1.414) / 2, 1000, 30).toCSG()
+CSG axle = new Cylinder((axleSlotX * 1.414) / 2, (axleSlotX * 1.414) / 2, keepawayLength, 30).toCSG()
 			.movey(servoBodyY / 2 - shoulderDiameter / 2 - shoulderTaper / 2 - shoulderInsetY)
 			.movez(servoBodyZ / 2);
 
