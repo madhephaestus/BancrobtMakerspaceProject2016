@@ -18,12 +18,12 @@ Closure generateLink = (Closure)ScriptingEngine
             null// no parameters (see next tutorial)
             );
 
-//Closure generateServo = (Closure)ScriptingEngine
-//					 .gitScriptRun(
-//            "https://github.com/madhephaestus/BancroftMakerspaceProject2016.git", // git location of the library
-//            "vexServo.groovy" , // file to load
-//            null// no parameters (see next tutorial)
-//            );
+Closure generateServo = (Closure)ScriptingEngine
+					 .gitScriptRun(
+            "https://github.com/madhephaestus/BancroftMakerspaceProject2016.git", // git location of the library
+            "vexServo.groovy" , // file to load
+            null// no parameters (see next tutorial)
+            );
             
 // Load the .CSG from the disk and cache it in memory
 CSG servo  = Vitamins.get(servoFile);
@@ -40,8 +40,8 @@ return new ICadGenerator(){
 		AbstractLink abstractLink = d.getAbstractLink(i);// Transform used by the UI to render the location of the object
 		// Transform used by the UI to render the location of the object
 		Affine manipulator = dh.getListener();
-		CSG tmpSrv = servo.clone()
-//		CSG tmpSrv = generateServo()
+//		CSG tmpSrv = servo.clone()
+		CSG tmpSrv = generateServo(20)
 					.rotx(-Math.toDegrees(dh.getAlpha()))
 					.rotz(-Math.toDegrees(dh.getTheta()))
 					.movex(-dh.getR())
