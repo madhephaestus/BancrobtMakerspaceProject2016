@@ -1,8 +1,8 @@
-return { double screwLength ->
 import java.nio.file.Paths;
 import eu.mihosoft.vrl.v3d.FileUtil;
 import com.neuronrobotics.bowlerstudio.vitamins.*;
 
+return { double screwLength ->
 [servoBodyX = 19.7, servoBodyY = 39.7, servoBodyZ = 38.3]
 [postDiameter = 8, postTaper = 0.6, postSpaceBetween = 4.2, postHeight = 14.3]
 screwDiameter = 4.5;
