@@ -16,7 +16,7 @@ CSG bar = new Cube(barX, barY, barZ).toCSG()
 //Screw holes
 CSG screwHoles = new Cylinder(screwDiameter / 2, screwDiameter / 2, 100, 30).toCSG()
 			.movez(-20);
-screwHoles = boltTransform(screwHoles).movey(17.5);
+screwHoles = boltTransform(screwHoles).movey(20);//17.5
 
 //Cutout screw holes
 bar = bar.difference(screwHoles);
