@@ -9,7 +9,7 @@ File servoFile = ScriptingEngine.fileFromGit(
 	"https://github.com/NeuronRobotics/BowlerStudioVitamins.git",
 	"BowlerStudioVitamins/stl/servo/smallservo.stl");
 
-ScriptingEngine.setAutoupdate(true)
+//ScriptingEngine.setAutoupdate(true)
 
 Closure generateLink = (Closure)ScriptingEngine
 					 .gitScriptRun(
@@ -22,6 +22,13 @@ Closure generateServo = (Closure)ScriptingEngine
 					 .gitScriptRun(
             "https://github.com/madhephaestus/BancroftMakerspaceProject2016.git", // git location of the library
             "vexServo.groovy" , // file to load
+            null// no parameters (see next tutorial)
+            );
+
+Closure generateProtractor = (Closure)ScriptingEngine
+					 .gitScriptRun(
+            "https://github.com/madhephaestus/BancroftMakerspaceProject2016.git", // git location of the library
+            "servoProtractor.groovy" , // file to load
             null// no parameters (see next tutorial)
             );
             
@@ -56,6 +63,14 @@ return new ICadGenerator(){
 					.movez(-dh.getD())
 		tmpLink.setManipulator(manipulator)
 		allCad.add(tmpLink)
+
+		CSG tmpProtractor = generateProtractor()
+					.rotx(-Math.toDegrees(dh.getAlpha()))
+					.rotz(-Math.toDegrees(dh.getTheta()))
+					.movex(-dh.getR())
+					.movez(-dh.getD())
+		tmpProtractor.setManipulator(manipulator)
+		allCad.add(tmpProtractor)
 		
 		println "Generating link: "+linkIndex
 
