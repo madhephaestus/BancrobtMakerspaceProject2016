@@ -48,7 +48,7 @@ return new ICadGenerator(){
 		// Transform used by the UI to render the location of the object
 		Affine manipulator = dh.getListener();
 //		CSG tmpSrv = servo.clone()
-		CSG tmpSrv = generateServo(40)
+		CSG tmpSrv = generateServo(25)
 					.rotx(-Math.toDegrees(dh.getAlpha()))
 					.rotz(-Math.toDegrees(dh.getTheta()))
 					.movex(-dh.getR())
