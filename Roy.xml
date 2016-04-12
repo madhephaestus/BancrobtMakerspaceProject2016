@@ -38,6 +38,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -72,6 +74,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -106,6 +110,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -138,10 +144,10 @@
 	<x>-55.0</x>
 	<y>-50.0</y>
 	<z>1.9984014443252818E-15</z>
-	<rotw>0.38268343236509444</rotw>
-	<rotx>2.3820429953758112E-17</rotx>
-	<roty>1.8132203584102984E-16</roty>
-	<rotz>-0.9238795325112825</rotz>
+	<rotw>0.38268343236509766</rotw>
+	<rotx>2.3820429953757976E-17</rotx>
+	<roty>1.813220358410287E-16</roty>
+	<rotz>-0.9238795325112767</rotz>
 </baseToZframe>
 
 </leg>
@@ -173,6 +179,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -207,6 +215,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -241,6 +251,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -273,10 +285,10 @@
 	<x>0.0</x>
 	<y>-60.0</y>
 	<z>4.440892098500626E-15</z>
-	<rotw>0.7072238818849059</rotw>
-	<rotx>8.997248564922616E-6</rotx>
-	<roty>-2.3805711206739322E-4</roty>
-	<rotz>-0.706989620955998</rotz>
+	<rotw>0.7072238818849057</rotw>
+	<rotx>8.997248564922618E-6</rotx>
+	<roty>-2.380571120673933E-4</roty>
+	<rotz>-0.7069896209559983</rotz>
 </baseToZframe>
 
 </leg>
@@ -308,6 +320,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -342,6 +356,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -376,6 +392,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -443,6 +461,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -477,6 +497,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
@@ -511,6 +533,8 @@
 	<homingTPS>10000000</homingTPS>
 	<electroMechanicalSize>standardMicro</electroMechanicalSize>
 	<electroMechanicalType>hobbyServo</electroMechanicalType>
+	<shaftSize>standardMicro1</shaftSize>
+	<shaftType>hobbyServoHorn</shaftType>
 	<mass>0.01</mass>
 	<centerOfMassFromCentroid>	<x>0.0</x>
 	<y>0.0</y>
