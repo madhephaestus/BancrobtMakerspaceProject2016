@@ -18,8 +18,7 @@ CSG servo = new Cube(servoBodyX, servoBodyY, servoBodyZ).toCSG()
 //Screw post
 CSG post = new Cylinder(postDiameter / 2 + postTaper, postDiameter / 2, postHeight, 30).toCSG()
 			.movez(servoBodyZ / 2)
-			.movey(-servoBodyY / 2 + postDiameter / 2 + postTaper)
-;
+			.movey(-servoBodyY / 2 + postDiameter / 2 + postTaper);
 
 servo = servo.union(post)
 servo = servo.union(post.movey(postDiameter + postTaper + postSpaceBetween))
@@ -42,8 +41,7 @@ servo = servo.union(postBracket)
 //Axle shoulder
 CSG shoulder = new Cylinder(shoulderDiameter / 2 + shoulderTaper / 2, shoulderDiameter / 2, shoulderHeight, 30).toCSG()
 				.movey(servoBodyY / 2 - shoulderDiameter / 2 - shoulderTaper / 2 - shoulderInsetY)
-				.movez(servoBodyZ / 2)
-;
+				.movez(servoBodyZ / 2);
 
 servo = servo.union(shoulder);
 
@@ -62,5 +60,5 @@ CSG axle = new Cylinder((axleSlotX * 1.414) / 2, (axleSlotX * 1.414) / 2, keepaw
 
 servo = servo.union(axle);
 
-return servo
+return servo.movey(-servoBodyY / 4).movez(-servoBodyZ / 2 - clutchHeight)
 }
