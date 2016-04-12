@@ -118,5 +118,5 @@ CSG linkSphere = linkSphere3.difference(screwHoles3)
  
 
 //return linkSphere.rotz(90).movey(10).movez(45.5)
-return linkSphere.rotz(90).movez(45.5)
+return linkSphere.rotz(90).movez(5.5)
 }
