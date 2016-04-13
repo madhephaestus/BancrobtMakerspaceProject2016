@@ -45,7 +45,7 @@ println "Loading STL file"
 		"moutScrewKeepaway.groovy" ,
 		null))
 // Load the .CSG from the disk and cache it in memory
-CSG servo  = Vitamins.get(servoFile);
+//CSG servo  = Vitamins.get(servoFile);
 return new ICadGenerator(){
 	@Override 
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
