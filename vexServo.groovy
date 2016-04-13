@@ -60,5 +60,5 @@ CSG axle = new Cylinder((axleSlotX * 1.414) / 2, (axleSlotX * 1.414) / 2, keepaw
 
 servo = servo.union(axle);
 
-return servo.movey(-servoBodyY / 4).movez(-servoBodyZ / 2 - clutchHeight)
+return servo.roty(180).movey(-servoBodyY / 4).movez(servoBodyZ / 2 + clutchHeight)
 }
