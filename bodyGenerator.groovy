@@ -22,10 +22,6 @@ public ArrayList<DHParameterKinematics> getLimbDHChains(MobileBase base) {
 println "Loading STL file"
 // Load an STL file from a git repo
 // Loading a local file also works here
-File servoFile = ScriptingEngine.fileFromGit(
-	"https://github.com/NeuronRobotics/BowlerStudioVitamins.git",
-	"BowlerStudioVitamins/stl/servo/smallservo.stl");
-
 		CSG dyioReference=   (CSG)(ScriptingEngine.inlineGistScriptRun(
 		"fb4cf429372deeb36f52", 
 		"dyioCad.groovy" ,
