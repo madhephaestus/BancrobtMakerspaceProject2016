@@ -9,7 +9,7 @@ import com.neuronrobotics.bowlerstudio.vitamins.*;
 //	"https://github.com/NeuronRobotics/BowlerStudioVitamins.git",
 //	"BowlerStudioVitamins/stl/servo/smallservo.stl");
 
-ScriptingEngine.setAutoupdate(true)
+//ScriptingEngine.setAutoupdate(true)
 
 Closure generateLink = (Closure)ScriptingEngine
 					 .gitScriptRun(
