@@ -16,19 +16,19 @@ CSG bar = new Cube(barX, barY, barZ).toCSG()
 //Screw holes
 CSG screwHoles = new Cylinder(screwDiameter / 2, screwDiameter / 2, 100, 8).toCSG()
 			.movez(-20);
-screwHoles = boltTransform(screwHoles).movey(18);
+screwHoles = boltTransform(screwHoles).movey(inputLength / 3.5);
 
 //Cutout screw holes
 bar = bar.difference(screwHoles);
 
 //Axle slot
 CSG axleSlot = new Cube(3.175, 3.3, 100).toCSG()
-			.movey(-30)
+			.movey(-inputLength / 2)
 			.movez(-10)
 			.makeKeepaway(0.8);
 
 CSG wideAxleSlot = new Cube(3.175, 4, 100).toCSG()
-			.movey(-30)
+			.movey(-inputLength / 2)
 			.movez(-10)
 			.makeKeepaway(0.8);
 
@@ -36,7 +36,7 @@ CSG wideAxleSlot = new Cube(3.175, 4, 100).toCSG()
 CSG keyway = new RoundedCube(10, 10, 10)
 			.cornerRadius(2)
 			.toCSG()
-			.movey(-30);
+			.movey(-inputLength / 2);
 
 //Cut out axle slot
 keyway = keyway.difference(axleSlot);
