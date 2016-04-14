@@ -1,4 +1,4 @@
-Closure c = { double inputLength ->
+return { double inputLength ->
 //Bar dimensions
 //y normally 62
 [barX = 10, barY = inputLength, barZ = 10]
@@ -46,9 +46,9 @@ keyway = keyway.difference(axleSlot);
 keyway = keyway.difference(wideAxleSlot.roty(90));
 
 //Set screw hole
-CSG setScrewHole = new Cylinder(setScrewDiameter / 2, setScrewDiameter / 2, 5, 30).toCSG()
+CSG setScrewHole = new Cylinder(setScrewDiameter / 2, setScrewDiameter / 2, 10, 30).toCSG()
 			.rotx(90)
-			.movey(-36);
+			.movey(-40);
 
 //Cut out set screw hole
 keyway = keyway.difference(setScrewHole);
@@ -67,5 +67,3 @@ bar = bar.union(line.roty(180));
 //return bar.movey(inputLength / 2 + 9.5 - 9.925).movez(37 - 5.942);
 return bar.movey(inputLength / 2 - 0.75).movez(-5);
 }
-
-c(62)
