@@ -14,8 +14,8 @@
 
 <name>Carl_One</name>
 	<cadEngine>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>ThreeDPrintCad.groovy</file>
+		<git>https://github.com/madhephaestus/BancroftMakerspaceProject2016.git</git>
+		<file>legGenerator.groovy</file>
 	</cadEngine>
 	<kinematics>
 		<git>https://gist.github.com/bcb4760a449190206170.git</git>
@@ -144,10 +144,10 @@
 	<x>-55.0</x>
 	<y>-50.0</y>
 	<z>1.9984014443252818E-15</z>
-	<rotw>0.38268343236513375</rotw>
-	<rotx>2.382042995375631E-17</rotx>
-	<roty>1.8132203584101598E-16</roty>
-	<rotz>-0.9238795325112121</rotz>
+	<rotw>0.3826834323652118</rotw>
+	<rotx>2.3820429953752676E-17</rotx>
+	<roty>1.8132203584098847E-16</roty>
+	<rotz>-0.9238795325110719</rotz>
 </baseToZframe>
 
 </leg>
@@ -567,10 +567,10 @@
 	<x>-55.0</x>
 	<y>55.0</y>
 	<z>-2.4424906541753444E-14</z>
-	<rotw>0.3826834323650901</rotw>
+	<rotw>0.38268343236509067</rotw>
 	<rotx>0.0</rotx>
-	<roty>2.0514246579479116E-16</roty>
-	<rotz>0.9238795325112862</rotz>
+	<roty>2.0514246579479094E-16</roty>
+	<rotz>0.9238795325112852</rotz>
 </baseToZframe>
 
 </leg>
