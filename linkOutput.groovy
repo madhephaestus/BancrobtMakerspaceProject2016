@@ -7,7 +7,7 @@ return { double inputLength ->
 screwDiameter = 4.5;
 
 //Set screw dimensions
-setScrewDiameter = 4.1;
+setScrewDiameter = 4.2;
 
 //Bolt transform closure
 Closure boltTransform = (Closure)ScriptingEngine.gitScriptRun("https://gist.github.com/7ae5497be0aec76a07db.git", "servoBoltTransform.groovy", null);
