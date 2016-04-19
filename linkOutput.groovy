@@ -16,14 +16,6 @@ Closure boltTransform = (Closure)ScriptingEngine.gitScriptRun("https://gist.gith
 CSG bar = new Cube(barX, barY, barZ).toCSG()
 			.movey(5);
 
-//Screw holes
-CSG screwHoles = new Cylinder(screwDiameter / 2, screwDiameter / 2, 100, 30).toCSG()
-			.movez(-20);
-screwHoles = boltTransform(screwHoles).movey(inputLength / 3.5);
-
-//Cut out screw holes
-bar = bar.difference(screwHoles);
-
 //Axle slot
 CSG axleSlot = new Cube(3.175, 3.3, 100).toCSG()
 			.movey(-inputLength / 2)
@@ -45,14 +37,6 @@ CSG keyway = new RoundedCube(10, 10, 10)
 keyway = keyway.difference(axleSlot);
 keyway = keyway.difference(wideAxleSlot.roty(90));
 
-//Set screw hole
-CSG setScrewHole = new Cylinder(setScrewDiameter / 2, setScrewDiameter / 2, 10, 30).toCSG()
-			.rotx(90)
-			.movey(-40);
-
-//Cut out set screw hole
-keyway = keyway.difference(setScrewHole);
-
 bar = bar.union(keyway);
 
 //Alignment point
@@ -65,5 +49,24 @@ bar = bar.union(line.roty(90));
 bar = bar.union(line.roty(180));
 
 //return bar.movey(inputLength / 2 + 9.5 - 9.925).movez(37 - 5.942);
-return bar.movey(inputLength / 2 - 0.75).movez(-5);
+bar = bar.movey(inputLength / 2 - 0.75).movez(-5);
+
+//Set screw hole
+CSG setScrewHole = new Cylinder(setScrewDiameter / 2, setScrewDiameter / 2, 6, 1000).toCSG()
+			.rotx(90)
+			.movey(-6)
+			.movez(-5)
+
+//Cut out set screw hole
+bar = bar.difference(setScrewHole);
+
+//Screw holes
+CSG screwHoles = new Cylinder(screwDiameter / 2, screwDiameter / 2, 100, 30).toCSG()
+			.movez(-20);
+screwHoles = boltTransform(screwHoles).movey(inputLength - 15);
+
+//Cut out screw holes
+bar = bar.difference(screwHoles);
+
+return bar
 }
