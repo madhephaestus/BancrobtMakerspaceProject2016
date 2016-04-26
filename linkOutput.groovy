@@ -1,7 +1,7 @@
 return { double inputLength ->
 //Bar dimensions
 //y normally 62
-[barX = 20, barY = inputLength, barZ = 20]
+[barX = 15, barY = inputLength, barZ = 15]
 
 //Screw dimensions
 screwDiameter = 4.5;
@@ -68,5 +68,5 @@ screwHoles = boltTransform(screwHoles).movey(inputLength - 15);
 //Cut out screw holes
 bar = bar.difference(screwHoles);
 
-return bar
+return bar.movez(5)
 }
