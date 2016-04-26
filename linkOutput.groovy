@@ -68,5 +68,5 @@ screwHoles = boltTransform(screwHoles).movey(inputLength - 15);
 //Cut out screw holes
 bar = bar.difference(screwHoles);
 
-return bar.movez(5)
+return bar.movez(10)
 }
