@@ -1,7 +1,7 @@
 return { double inputLength ->
 //Bar dimensions
 //y normally 62
-[barX = 10, barY = inputLength, barZ = 10]
+[barX = 20, barY = inputLength, barZ = 20]
 
 //Screw dimensions
 screwDiameter = 4.5;
