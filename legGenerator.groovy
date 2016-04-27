@@ -37,7 +37,7 @@ Closure generateProtractor = (Closure)ScriptingEngine
 //CSG servo  = Vitamins.get(servoFile);
 
 //Cache parts
-CSG servoCache = generateServo(25);
+CSG servoCache = generateServo(30);
 CSG protractorCache = generateProtractor();
 Map<Float, CSG> linkCache = new HashMap<Float, CSG>();
 
