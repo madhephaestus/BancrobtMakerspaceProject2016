@@ -4,6 +4,12 @@ import org.apache.commons.io.IOUtils;
 import com.neuronrobotics.bowlerstudio.vitamins.*;
 import com.neuronrobotics.bowlerstudio.physics.*;
 
+Closure generateServo = (Closure)ScriptingEngine
+					 .gitScriptRun(
+            "https://github.com/madhephaestus/BancroftMakerspaceProject2016.git", // git location of the library
+            "vexServo.groovy" , // file to load
+            null// no parameters (see next tutorial)
+            );         
 	/**
  * Gets the all dh chains.
  *
@@ -19,7 +25,7 @@ public ArrayList<DHParameterKinematics> getLimbDHChains(MobileBase base) {
 	}
 	return copy;
 }
-println "Loading STL file"
+
 // Load an STL file from a git repo
 // Loading a local file also works here
 		CSG dyioReference=   (CSG)(ScriptingEngine.inlineGistScriptRun(
@@ -53,15 +59,30 @@ return new ICadGenerator(){
 
 		return allCad;
 	}
+	//This is the keep-away shape for the pulling out of the servo
 	private CSG getAppendageMount(){
-
 		
-		return new Cube(20).toCSG();
+		CSG tmp =generateServo(200)
+				.rotz(90)
+				
+		CSG cylinder = new Cylinder(	20, // Radius at the top
+                      				20, // Radius at the bottom
+                      				20, // Height
+                      			         (int)20 //resolution
+                      			         ).toCSG()
+                      			         .movex(10)
+		return tmp
+		.union(
+			cylinder.movez(-21),
+			tmp.movez(20)
+			)
+		
 	}
 	private CSG getAttachment(){
-
 		
-		return new Cube(10).toCSG();
+		return generateServo(20)
+				.rotz(90)
+
 	}
 	@Override 
 	public ArrayList<CSG> generateBody(MobileBase b ) {
@@ -69,12 +90,17 @@ return new ICadGenerator(){
 		ArrayList<CSG> cutouts=new ArrayList<>();
 		ArrayList<CSG> attach=new ArrayList<>();
 		CSG attachUnion=null;
+		CSG tmp = generateServo(25);
 		for(DHParameterKinematics l:b.getLegs()){
+			
 			TransformNR position = l.getRobotToFiducialTransform();
 			Transform csgTrans = TransformFactory.nrToCSG(position)
 			cutouts.add(getAppendageMount()
+						
 				.transformed(csgTrans)
-				);
+				.setColor(javafx.scene.paint.Color.CYAN)
+				)
+				
 			CSG attachment = getAttachment()
 				.transformed(csgTrans)
 			attach.add(attachment);
@@ -84,10 +110,11 @@ return new ICadGenerator(){
 				attachUnion = 	attachUnion.union(attachment)
 			}
 			
+			
 		}
 
-		CSG upperBody = attachUnion.hull()
-		
+		CSG upperBody = attachUnion
+		.hull()
 		
 						
 		CSG myDyIO=dyioReference
@@ -103,7 +130,7 @@ return new ICadGenerator(){
 		
 		upperBody= upperBody.difference(cutouts);
 		
-		upperBody= upperBody.union(attach);
+		//upperBody= upperBody.union(attach);
 		
 	
 					

@@ -46,6 +46,7 @@ return new ICadGenerator(){
 	public ArrayList<CSG> generateCad(DHParameterKinematics d, int linkIndex) {
 		ArrayList<DHLink> dhLinks = d.getChain().getLinks()
 		ArrayList<CSG> allCad=new ArrayList<>()
+		return allCad
 		int i=linkIndex;
 		
 //		println "Generating link: "+linkIndex
