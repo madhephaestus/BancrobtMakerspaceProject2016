@@ -28,7 +28,7 @@ CSG wideAxleSlot = new Cube(3.175, 4, 100).toCSG()
 			.makeKeepaway(0.8);
 
 //Axle slot keyway
-CSG keyway = new RoundedCube(10, 10, 10)
+CSG keyway = new RoundedCube(barX, 10, barZ)
 			.cornerRadius(2)
 			.toCSG()
 			.movey(-inputLength / 2);
@@ -68,5 +68,5 @@ screwHoles = boltTransform(screwHoles).movey(inputLength - 15);
 //Cut out screw holes
 bar = bar.difference(screwHoles);
 
-return bar.movez(-5)
+return bar.movez(-2.5)
 }
