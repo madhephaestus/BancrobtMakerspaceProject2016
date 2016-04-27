@@ -16,14 +16,8 @@ Closure generateServo = (Closure)ScriptingEngine
  * @return the all dh chains
  */
 public ArrayList<DHParameterKinematics> getLimbDHChains(MobileBase base) {
-	ArrayList<DHParameterKinematics> copy = new ArrayList<DHParameterKinematics>();
-	for(DHParameterKinematics l:base.getLegs()){
-		copy.add(l);	
-	}
-	for(DHParameterKinematics l:base.getAppendages() ){
-		copy.add(l);	
-	}
-	return copy;
+
+	return base.getAllDHChains();
 }
 
 // Load an STL file from a git repo
