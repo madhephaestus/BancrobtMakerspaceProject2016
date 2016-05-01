@@ -73,7 +73,7 @@ return new ICadGenerator(){
 		//println "Making bar"
 		if (!linkCache.keySet().contains(dh.getR()))
 		{
-			println "New bar"
+//			println "New bar"
 			linkCache.put(dh.getR(), generateLink(dh.getR()));
 		}
 		CSG tmpLink = linkCache.get(dh.getR())
@@ -95,7 +95,7 @@ return new ICadGenerator(){
 		tmpProtractor.setManipulator(manipulator)
 		allCad.add(tmpProtractor)
 
-		println "Finished"
+//		println "Finished"
 
 //		if(i==0){
 //			// more at https://github.com/NeuronRobotics/java-bowler/blob/development/src/main/java/com/neuronrobotics/sdk/addons/kinematics/DHLink.java
