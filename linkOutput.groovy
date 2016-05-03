@@ -1,4 +1,4 @@
-Closure c = { double inputLength ->
+return { double inputLength ->
 //Bar dimensions
 //y normally 62
 [barX = 15, barY = inputLength, barZ = 15]
@@ -70,5 +70,3 @@ bar = bar.difference(screwHoles);
 
 return bar.movez(-2.5)
 }
-
-return c(62)
