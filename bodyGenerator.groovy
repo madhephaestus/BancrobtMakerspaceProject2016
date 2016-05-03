@@ -61,7 +61,7 @@ return new ICadGenerator(){
 				
 		CSG cylinder = new Cylinder(	20, // Radius at the top
                       				20, // Radius at the bottom
-                      				20, // Height
+                      				16, // Thickness of the leg part
                       			         (int)20 //resolution
                       			         ).toCSG()
                       			         .movex(10)
@@ -73,9 +73,16 @@ return new ICadGenerator(){
 		
 	}
 	private CSG getAttachment(){
-		
+		CSG cylinder = new Cylinder(	20, // Radius at the top
+                      				20, // Radius at the bottom
+                      				1, // Thickness of the leg part
+                      			         (int)20 //resolution
+                      			         ).toCSG()
+                      			         .movex(10)
+                      			         .movez(18)
 		return generateServo(20)
 				.rotz(90)
+				.union(cylinder)
 
 	}
 	@Override 
@@ -137,7 +144,7 @@ return new ICadGenerator(){
 				});
 		allCad.add(upperBody)
 		
-		
+		//return cutouts
 		return allCad;
 	}
 };
