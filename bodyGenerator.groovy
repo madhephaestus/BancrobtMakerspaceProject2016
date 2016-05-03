@@ -154,7 +154,7 @@ return new ICadGenerator(){
 				});
 		allCad.add(upperBody)
 		
-		return cutouts
-		//return allCad;
+		//return cutouts
+		return allCad;
 	}
 };
