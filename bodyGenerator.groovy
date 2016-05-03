@@ -56,19 +56,29 @@ return new ICadGenerator(){
 	//This is the keep-away shape for the pulling out of the servo
 	private CSG getAppendageMount(){
 		
+		double keepAwayHeight = 16;
+
+		
 		CSG tmp =generateServo(200)
 				.rotz(90)
 				
 		CSG cylinder = new Cylinder(	20, // Radius at the top
                       				20, // Radius at the bottom
-                      				16, // Thickness of the leg part
+                      				keepAwayHeight, // Thickness of the leg part
                       			         (int)20 //resolution
                       			         ).toCSG()
                       			         .movex(10)
+           CSG setScrew = new Cylinder(	5/2, // Radius at the top
+                      				5/2, // Radius at the bottom
+                      				200, // Thickness of the leg part
+                      			         (int)20 //resolution
+                      			         ).toCSG().roty(90)
+                      			          .movez(-15/2)		         
+                      			     
 		return tmp
 		.union(
-			cylinder.movez(-21),
-			tmp.movez(20)
+			cylinder.movez(-keepAwayHeight - 1),
+			tmp.movez(keepAwayHeight), setScrew
 			)
 		
 	}
@@ -144,7 +154,7 @@ return new ICadGenerator(){
 				});
 		allCad.add(upperBody)
 		
-		//return cutouts
-		return allCad;
+		return cutouts
+		//return allCad;
 	}
 };
