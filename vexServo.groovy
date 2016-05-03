@@ -7,7 +7,7 @@ return { double keepawayLength ->
 [postDiameter = 8, postTaper = 0.6, postSpaceBetween = 4.2, postHeight = 14.3]
 [screwDiameter = 4.5, screwLengthMax = 12.7, screwHeadDiameter = 6.62]
 [postBracketX = 5, postBracketY = 1, postBracketZ = 11.4, postBracketTaper = 3.4]
-[axleSlotX = 3.175, axleSlotY = 3.175, axleSlotZ = 5.2, axleSlotInsetY = 8]
+[axleSlotX = 3.175, axleSlotY = 3.175, axleSlotZ = 5.2, axleSlotInsetY = 8, axleLength = 20]
 [shoulderDiameter = 11.6, shoulderTaper = 1.9, shoulderHeight = 1, shoulderInsetY = 3.1]
 [clutchHeight = 13.208,
  clutchDiameter = 16.2]
@@ -59,9 +59,9 @@ CSG clutch = new Cylinder(clutchDiameter / 2, clutchDiameter / 2, clutchHeight, 
 servo = servo.union(clutch);
 
 //Axle
-CSG axle = new Cylinder((axleSlotX * 1.414) / 2, (axleSlotX * 1.414) / 2, 20, 8).toCSG()
+CSG axle = new Cylinder((axleSlotX * 1.414) / 2, (axleSlotX * 1.414) / 2, axleLength, 8).toCSG()
 			.movey(servoBodyY / 2 - shoulderDiameter / 2 - shoulderTaper / 2 - shoulderInsetY)
-			.movez(servoBodyZ / 2);
+			.movez(servoBodyZ - clutchHeight / 2);
 
 
 servo = servo.union(axle);
