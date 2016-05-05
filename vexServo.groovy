@@ -14,6 +14,7 @@ return { double keepawayLength ->
 
 //Servo body
 CSG servo = new Cube(servoBodyX, servoBodyY, servoBodyZ).toCSG()
+			.makeKeepaway(1.5)
 
 //Screw post
 CSG post = new Cylinder(postDiameter / 2 + postTaper, postDiameter / 2, postHeight, 8).toCSG()
@@ -54,7 +55,8 @@ servo = servo.union(shoulder);
 //Clutch
 CSG clutch = new Cylinder(clutchDiameter / 2, clutchDiameter / 2, clutchHeight, 8).toCSG()
 				.movey(servoBodyY / 2 - shoulderDiameter / 2 - shoulderTaper / 2 - shoulderInsetY)
-				.movez(servoBodyZ / 2);
+				.movez(servoBodyZ / 2)
+				.makeKeepaway(1.5)
 
 servo = servo.union(clutch);
 
