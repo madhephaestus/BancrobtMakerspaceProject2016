@@ -99,11 +99,11 @@
 	<type>servo-rotory</type>
 	<index>2</index>
 	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>15.223880597014928</lowerLimit>
+	<upperLimit>105.0</upperLimit>
+	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>87.01481398975272</staticOffset>
+	<staticOffset>105.0</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>145</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -144,10 +144,10 @@
 	<x>-55.00000000000001</x>
 	<y>-54.99999999999999</y>
 	<z>25.0</z>
-	<rotw>0.2345465365423747</rotw>
-	<rotx>0.4082312121614032</rotx>
-	<roty>0.10933194705289535</roty>
-	<rotz>-0.8754323074726263</rotz>
+	<rotw>0.23454653654235635</rotw>
+	<rotx>0.4082312121614318</rotx>
+	<roty>0.10933194705290296</roty>
+	<rotz>-0.8754323074726879</rotz>
 </baseToZframe>
 
 </leg>
@@ -567,10 +567,10 @@
 	<x>-55.00000000000001</x>
 	<y>55.00000000000001</y>
 	<z>24.99999999999998</z>
-	<rotw>0.23456971600980928</rotw>
-	<rotx>-0.4082178936767282</rotx>
-	<roty>0.10938165494661395</roty>
-	<rotz>0.8754260980655784</rotz>
+	<rotw>0.2345697160098418</rotw>
+	<rotx>-0.40821789367667766</rotx>
+	<roty>0.10938165494660043</roty>
+	<rotz>0.8754260980654698</rotz>
 </baseToZframe>
 
 </leg>
