@@ -129,7 +129,7 @@ return new ICadGenerator(){
 		
 						
 		CSG myDyIO=dyioReference
-				.movez(upperBody.getMaxZ()+15.0)
+				.movez(upperBody.getMaxZ())
 				.movex(	upperBody.getMaxX()-
 						Math.abs(upperBody.getMinX()))
 				.movey(	upperBody.getMaxY()-
