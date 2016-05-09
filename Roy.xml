@@ -62,12 +62,12 @@
 	<deviceName>dyio</deviceName>
 	<type>servo-rotory</type>
 	<index>1</index>
-	<scale>0.33</scale>
+	<scale>0.409</scale>
 	<upperLimit>255.0</upperLimit>
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>93.74626865671641</staticOffset>
+	<staticOffset>55.0</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>97</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -144,10 +144,10 @@
 	<x>-55.00000000000001</x>
 	<y>-54.99999999999999</y>
 	<z>25.0</z>
-	<rotw>0.23454653654084176</rotw>
-	<rotx>0.40823121216379316</rotx>
-	<roty>0.10933194705353537</roty>
-	<rotz>-0.8754323074777516</rotz>
+	<rotw>0.23454653652918955</rotw>
+	<rotx>0.408231212181959</rotx>
+	<roty>0.10933194705840059</roty>
+	<rotz>-0.8754323075167072</rotz>
 </baseToZframe>
 
 </leg>
@@ -567,10 +567,10 @@
 	<x>-55.00000000000001</x>
 	<y>55.00000000000001</y>
 	<z>24.99999999999998</z>
-	<rotw>0.23456971601251556</rotw>
-	<rotx>-0.40821789367251005</rotx>
-	<roty>0.10938165494548356</roty>
-	<rotz>0.8754260980565323</rotz>
+	<rotw>0.23456971603308036</rotw>
+	<rotx>-0.40821789364045447</rotx>
+	<roty>0.10938165493689436</roty>
+	<rotz>0.8754260979877886</rotz>
 </baseToZframe>
 
 </leg>
