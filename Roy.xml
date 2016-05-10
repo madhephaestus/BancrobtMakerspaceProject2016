@@ -103,7 +103,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>110.0</staticOffset>
+	<staticOffset>38.75000000000001</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>145</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -144,10 +144,10 @@
 	<x>-55.00000000000001</x>
 	<y>-54.99999999999999</y>
 	<z>25.0</z>
-	<rotw>0.23454652818665753</rotw>
-	<rotx>0.4082312251879638</rotx>
-	<roty>0.10933195054165176</roty>
-	<rotz>-0.8754323354074626</rotz>
+	<rotw>0.2345464647758122</rotw>
+	<rotx>0.40823132404548346</rotx>
+	<roty>0.10933197701754277</roty>
+	<rotz>-0.8754325474026848</rotz>
 </baseToZframe>
 
 </leg>
@@ -172,7 +172,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>125.625</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>171</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -208,7 +208,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>125.625</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>148</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -244,7 +244,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>136.875</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>120</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -313,7 +313,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>129.375</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>124</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -349,7 +349,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>131.25</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>91</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -385,7 +385,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>133.125</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>139</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -454,7 +454,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>141.25</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>133</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -490,7 +490,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>90.625</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>137</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -526,7 +526,7 @@
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>255.0</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>131</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -567,10 +567,10 @@
 	<x>-55.00000000000001</x>
 	<y>55.00000000000001</y>
 	<z>24.99999999999998</z>
-	<rotw>0.23456973074777746</rotw>
-	<rotx>-0.4082178707037645</rotx>
-	<roty>0.10938164879102684</roty>
-	<rotz>0.8754260487998983</rotz>
+	<rotw>0.23456984256645674</rotw>
+	<rotx>-0.4082176964053134</rotx>
+	<roty>0.10938160208789756</roty>
+	<rotz>0.8754256750156638</rotz>
 </baseToZframe>
 
 </leg>
