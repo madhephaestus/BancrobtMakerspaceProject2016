@@ -68,5 +68,19 @@ screwHoles = boltTransform(screwHoles).movey(inputLength - 12);
 //Cut out screw holes
 bar = bar.difference(screwHoles);
 
+//Round edge
+CSG edgeCut = new Cube(100, 10, 100).toCSG()
+			.rotz(-45)
+			.movey(inputLength + 5)
+			.movex(-15 / 2)
+
+CSG edgeCut2 = new Cube(100, 10, 100).toCSG()
+			.rotz(45)
+			.movey(inputLength + 20)
+			.movex(-15 / 2)
+
+bar = bar.difference(edgeCut)
+bar = bar.difference(edgeCut2)
+
 return bar.movez(-2.5)
 }
