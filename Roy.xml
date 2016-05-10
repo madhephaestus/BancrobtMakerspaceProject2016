@@ -27,11 +27,11 @@
 	<type>servo-rotory</type>
 	<index>0</index>
 	<scale>0.409</scale>
-	<upperLimit>74.0</upperLimit>
+	<upperLimit>255.0</upperLimit>
 	<lowerLimit>0.0</lowerLimit>
 	<upperVelocity>1.0E8</upperVelocity>
 	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>55.0</staticOffset>
+	<staticOffset>98.95522388059702</staticOffset>
 	<isLatch>true</isLatch>
 	<indexLatch>105</indexLatch>
 	<isStopOnLatch>false</isStopOnLatch>
@@ -144,10 +144,10 @@
 	<x>-55.00000000000001</x>
 	<y>-54.99999999999999</y>
 	<z>25.0</z>
-	<rotw>0.23454653556952781</rotw>
-	<rotx>0.4082312136780713</rotx>
-	<roty>0.10933194745908746</roty>
-	<rotz>-0.8754323107250487</rotz>
+	<rotw>0.23454652818665753</rotw>
+	<rotx>0.4082312251879638</rotx>
+	<roty>0.10933195054165176</roty>
+	<rotz>-0.8754323354074626</rotz>
 </baseToZframe>
 
 </leg>
@@ -567,154 +567,13 @@
 	<x>-55.00000000000001</x>
 	<y>55.00000000000001</y>
 	<z>24.99999999999998</z>
-	<rotw>0.23456971772609392</rotw>
-	<rotx>-0.40821789100145156</rotx>
-	<roty>0.10938165422977567</roty>
-	<rotz>0.8754260923284286</rotz>
+	<rotw>0.23456973074777746</rotw>
+	<rotx>-0.4082178707037645</rotx>
+	<roty>0.10938164879102684</roty>
+	<rotz>0.8754260487998983</rotz>
 </baseToZframe>
 
 </leg>
-<appendage>
-
-<name>Neck</name>
-	<cadEngine>
-		<git>https://github.com/madhephaestus/BancroftMakerspaceProject2016.git</git>
-		<file>legGenerator.groovy</file>
-	</cadEngine>
-	<kinematics>
-		<git>https://gist.github.com/bcb4760a449190206170.git</git>
-		<file>DefaultDhSolver.groovy</file>
-	</kinematics>
-<link>
-	<name>basePan</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>12</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>128.43283582089552</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>235</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<electroMechanicalSize>standardMicro</electroMechanicalSize>
-	<electroMechanicalType>hobbyServo</electroMechanicalType>
-	<shaftSize>standardMicro1</shaftSize>
-	<shaftType>hobbyServoHorn</shaftType>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>0.0</Theta>
-		<Radius>60.0</Radius>
-		<Alpha>-90.0</Alpha>
-	</DHParameters>
-
-</link>
-<link>
-	<name>baseTilt</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>13</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>128.0</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>128</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<electroMechanicalSize>standardMicro</electroMechanicalSize>
-	<electroMechanicalType>hobbyServo</electroMechanicalType>
-	<shaftSize>standardMicro1</shaftSize>
-	<shaftType>hobbyServoHorn</shaftType>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>-90.0</Theta>
-		<Radius>93.0</Radius>
-		<Alpha>0.0</Alpha>
-	</DHParameters>
-
-</link>
-<link>
-	<name>elbow</name>
-	<deviceName>dyio</deviceName>
-	<type>servo-rotory</type>
-	<index>14</index>
-	<scale>0.33</scale>
-	<upperLimit>255.0</upperLimit>
-	<lowerLimit>0.0</lowerLimit>
-	<upperVelocity>1.0E8</upperVelocity>
-	<lowerVelocity>-1.0E8</lowerVelocity>
-	<staticOffset>121.0</staticOffset>
-	<isLatch>true</isLatch>
-	<indexLatch>121</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-	<electroMechanicalSize>standardMicro</electroMechanicalSize>
-	<electroMechanicalType>hobbyServo</electroMechanicalType>
-	<shaftSize>standardMicro1</shaftSize>
-	<shaftType>hobbyServoHorn</shaftType>
-	<mass>0.01</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz></centerOfMassFromCentroid>
-
-	<DHParameters>
-		<Delta>0.0</Delta>
-		<Theta>90.0</Theta>
-		<Radius>131.0</Radius>
-		<Alpha>0.0</Alpha>
-	</DHParameters>
-
-</link>
-
-<ZframeToRAS
->	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
-</ZframeToRAS>
-
-<baseToZframe>
-	<x>128.57142857142853</x>
-	<y>2.0089749969407583E-14</y>
-	<z>90.47619047619045</z>
-	<rotw>0.9742509488082487</rotw>
-	<rotx>-0.008267195311190441</rotx>
-	<roty>-0.22235514906235657</roty>
-	<rotz>-0.03639958671978446</rotz>
-</baseToZframe>
-
-</appendage>
 
 <ZframeToRAS>
 	<x>0.0</x>
