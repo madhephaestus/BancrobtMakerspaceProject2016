@@ -63,7 +63,7 @@ bar = bar.difference(setScrewHole);
 //Screw holes
 CSG screwHoles = new Cylinder(screwDiameter / 2, screwDiameter / 2, 100, 30).toCSG()
 			.movez(-20);
-screwHoles = boltTransform(screwHoles).movey(inputLength - 10);
+screwHoles = boltTransform(screwHoles).movey(inputLength - 12);
 
 //Cut out screw holes
 bar = bar.difference(screwHoles);
